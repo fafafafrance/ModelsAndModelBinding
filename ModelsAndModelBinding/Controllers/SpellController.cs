@@ -19,7 +19,7 @@ namespace ModelsAndModelBinding.Controllers
             if (ModelState.IsValid)
             {
                 // Add spell to the database (SpellDb.Add(spell);)
-                TempData["SuccessMessage"] = $"{spell.Name} (Level {spell.Level}, Rarity Tier {spell.Rarity}) was successfully inscribed into the grimoire!";
+                TempData["SuccessMessage"] = $"{spell.School}: {spell.Name} (Level {spell.Level}, Rarity Tier {spell.Rarity}) was successfully inscribed into the grimoire!";
                 return RedirectToAction("Index");
             }
 

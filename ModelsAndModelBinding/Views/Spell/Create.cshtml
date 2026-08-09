@@ -19,6 +19,12 @@
             </div>
 
             <div class="mb-3">
+                <label asp-for="School" class="form-label"></label>
+                <input asp-for="School" class="form-control" />
+                <span asp-validation-for="School" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
                 <label asp-for="Level" class="form-label"></label>
                 <input asp-for="Level" class="form-control" />
                 <span asp-validation-for="Level" class="text-danger"></span>
