@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Grimoire";
+}
+
+<h1>Spell Grimoire</h1>
+<p>List of inscribed spells will appear here!</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success mt-3">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<a asp-action="Create" class="btn btn-primary mt-2">Inscribe New Spell</a>
